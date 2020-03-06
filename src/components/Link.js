@@ -3,10 +3,12 @@ import { createFragmentContainer, graphql } from 'react-relay';
 
 class Link extends Component {
   render() {
+    const { description, url } = this.props.link;
+
     return (
       <div>
         <div>
-          {this.props.link.description} ({this.props.link.url})
+          {description} {url}
         </div>
       </div>
     );
